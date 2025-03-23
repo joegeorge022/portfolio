@@ -190,27 +190,28 @@ const Home = () => {
             </HeroBio>
             
             <SocialLinks
-              initial={{ opacity: 0, y: 50 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.6 }}
-            >
-              <SocialLink 
-                href={`https://${profileData.contact.linkedin}`} 
-                target="_blank" 
-                rel="noopener noreferrer"
-                aria-label="LinkedIn"
-              >
-                <FaLinkedin />
-              </SocialLink>
-              <SocialLink 
-                href={`https://${profileData.contact.github}`} 
-                target="_blank" 
-                rel="noopener noreferrer"
-                aria-label="GitHub"
-              >
-                <FaGithub />
-              </SocialLink>
-            </SocialLinks>
+  initial={{ opacity: 0, y: 50 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.6, delay: 0.6 }}
+>
+  <SocialLink 
+    href={profileData.contact.linkedin}
+    target="_blank" 
+    rel="noopener noreferrer"
+    aria-label="LinkedIn"
+  >
+    <FaLinkedin />
+  </SocialLink>
+  <SocialLink 
+    href={profileData.contact.github}
+    target="_blank" 
+    rel="noopener noreferrer"
+    aria-label="GitHub"
+  >
+    <FaGithub />
+  </SocialLink>
+</SocialLinks>
+
           </HeroTextContent>
           
           <ProfileImageContainer
