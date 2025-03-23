@@ -218,22 +218,29 @@ const Contact = () => {
           </InfoText>
           
           <SocialLinks>
-            <SocialLink href={`https://${profileData.contact.linkedin}`} target="_blank" rel="noopener noreferrer">
-              <SocialIcon><FaLinkedin /></SocialIcon>
-              <SocialText>{profileData.contact.linkedin}</SocialText>
-            </SocialLink>
-            
-            <SocialLink href={`https://${profileData.contact.github}`} target="_blank" rel="noopener noreferrer">
-              <SocialIcon><FaGithub /></SocialIcon>
-              <SocialText>{profileData.contact.github}</SocialText>
-            </SocialLink>
-            
-            <SocialLink href={`mailto:${profileData.contact.email}`}>
-              <SocialIcon><FaEnvelope /></SocialIcon>
-              <SocialText>{profileData.contact.email}</SocialText>
-            </SocialLink>
-          </SocialLinks>
-        </ContactInfo>
+  <SocialLink
+    href={profileData.contact.linkedin}
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <SocialIcon><FaLinkedin /></SocialIcon>
+    <SocialText>{profileData.contact.linkedin}</SocialText>
+  </SocialLink>
+
+  <SocialLink
+    href={profileData.contact.github}
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <SocialIcon><FaGithub /></SocialIcon>
+    <SocialText>{profileData.contact.github}</SocialText>
+  </SocialLink>
+
+  <SocialLink href={`mailto:${profileData.contact.email}`}>
+    <SocialIcon><FaEnvelope /></SocialIcon>
+    <SocialText>{profileData.contact.email}</SocialText>
+  </SocialLink>
+</SocialLinks>
         
         <ContactForm
           initial={{ opacity: 0, x: 50 }}
