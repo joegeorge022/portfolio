@@ -83,8 +83,8 @@ export const profileData = {
   ],
 
   contact: {
-    linkedin: "https://github.com/joegeorge022",
-    github: "https://github.com/joegeorge022",
+    linkedin: "linkedin.com/in/joegeorge022/",
+    github: "github.com/joegeorge022/",
     email: "contact@joegeorge.dev"
   }
 };
